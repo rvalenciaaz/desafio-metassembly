@@ -8,4 +8,4 @@ https://www.khanacademy.org/science/high-school-biology/hs-molecular-genetics/hs
 
 El genoma corresponde al ADN presente en la célula de un organismo, mientras que el gen es la unidad funcional del ADN: es un fragmento de ADN que codifica para la síntesis de una proteína, necesaria para llevar a cabo una reacción química en la célula. En bacterias y arqueas, también como organismos procariotas (carentes de núcleo), el ADN está contenido (disuelto) en el citoplasma, el fluido intracelular. Al contrario, los organismos eucariontes que comprenden protistas, hongos, plantas y animales tiene el ADN encerrado en un núcleo membranoso dentro de la célula.
 
-ATTCCCGTAGCAAATCGCTCTCTCGGATCTAGGCTTTATTTAGGCTTAGGCTTGCGCGGCGCGGCGATAATTATATATCGGCAGCAGCTACAGCAGCATCGGCTACGACTAGCAAAAACACATAAACCACACACACAA
+ATTCCCGTAGCAAATCGCTCTCTCGGATCTAGGCTTTATTTAGGCTTAGGCTTGCGCGGCGCGGCGATAATTATATATCGGC
