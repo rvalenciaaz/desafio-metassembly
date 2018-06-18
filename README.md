@@ -31,7 +31,7 @@ Dentro de los pasos que hay realizar al inicio está la identificación del sola
 `#resumen de solapamientos`  
 `show-coords -r -c -l out.rq.delta > out.coords`    
   
-En el archivo estan guardados los datos de los solapamientos encontrados.  
+En el archivo .coords estan guardados los datos de los solapamientos encontrados.  
   
 Una vez realizada la generación de los archivos de solapamiento, se debe utilizar la información proveniente de la propia secuencia y los solapamientos, para escoger las uniones correctas y reconstruir el genoma. Si se genera un modelo para solucionar este problema, se puede entrenar en base a un set de datos (que esta en generación) que contiene genoma completos (en 1 contig) que serían la meta y 2 ensamblajes generados con diferentes herramientas de ese genoma, que son los que se deben comparar y unir para ser similar a la meta. La comparación del resultado del modelo con la meta puede ser realizada usando una métrica que penalize tanto equivocaciones en la posición de los nucleotidos, como el número de contigs obtenido. 
 
