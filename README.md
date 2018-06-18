@@ -19,6 +19,7 @@ Algunas herramientas de metaensamblaje creadas recientemente son:
 Sin embargo, ambas presentan problemas a la hora de discriminar lecturas quiméricas, dando algunos resultados érroneos. Esto es lo que se quiere mejorar.
 
 Dentro de los pases que hay realizar al inicio está la identificación del solapamiento de las secuencias. Esta se hace generalmente con mummer, que es un alineador rápido de genomas.  
+  
 `#alineamiento de genomas, especificar length`  
 `nucmer -l length -prefix out assembly_1.fasta assembly2.fasta`  
 `#filtrado de replicados, especificar minalignpc`  
