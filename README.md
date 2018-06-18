@@ -29,7 +29,7 @@ Dentro de los pases que hay realizar al inicio está la identificación del sola
   
 En el archivo estan guardados los datos de los solapamientos encontrados.
 
-Datos de entrenamiento:
-Eucariontes:
+Datos de entrenamiento:  
+Eucariontes:  
 Bacterias:
 
