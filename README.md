@@ -2,7 +2,7 @@
 
 La idea principal para enfrentar el metaensamblaje de genomas es reconocer los solapamientos entre los genomas fuente y luego decidir si estos son correctos, en el sentido de que los fragmentos estén unidos de la misma manera que en la secuencia original.
 
-Los conceptos de genoma y gen pueden ser revisados en los siguientes links: 
+Los conceptos de genoma y gen pueden ser revisados en el siguiente link: 
 
 https://www.khanacademy.org/science/high-school-biology/hs-molecular-genetics/hs-rna-and-protein-synthesis/a/intro-to-gene-expression-central-dogma
 
@@ -10,4 +10,19 @@ El genoma corresponde al ADN presente en la célula de un organismo, mientras qu
 
 ATTCCCGTAGCAAATCGCTCTCTCGGATCTAGGCTTTATTTAGGCTTAGGCTTGCGCGGCGCGGCGATAATTATATATCGGCAAAATTTG
 
-Obtener el genoma de una bacteria, por ejemplo, ha sido un camino arduo en las ultimas decadas, convergiendo actualmentes en técnicas de secuenciación y herramientas bioinfórmaticas sofisticadas.
+Obtener el genoma de una bacteria, por ejemplo, ha sido un camino arduo en las ultimas decadas, convergiendo actualmentes en técnicas de secuenciación y herramientas bioinfórmaticas sofisticadas. Sin embargo, no siempre es posible recuperar el genoma completo como una secuencia única, sino que se encuentra fragmentado. Esta fragmentación provoca que ciertos genes no sea predichos correctamente, por lo que se pierde información biológica valiosa del organismo
+
+Algunas herramientas de metaensamblaje creadas recientemente son:
+- quickmerge: https://academic.oup.com/nar/article/44/19/e147/2468393
+- metaassembler: https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0764-4
+
+Sin embargo, ambas presentan problemas a la hora de discriminar lecturas quiméricas, dando algunos resultados érroneos. Esto es lo que se quiere mejorar.
+
+Dentro de los pases que hay realizar al inicio está la identificación del solapamiento de las secuencias. Esta se hace generalmente con mummer, que es un alineador rápido de genomas.
+
+'nucmer -maxmatch -c 100 -p nucmer B_anthracis_Mslice.fasta B_anthracis_contigs.fasta'
+
+Datos de entrenamiento:
+Eucariontes:
+Bacterias:
+
