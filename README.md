@@ -25,7 +25,7 @@ Dentro de los pases que hay realizar al inicio está la identificación del sola
 `#filtrado de replicados, especificar minalignpc`  
 `delta-filter -i minalignpc -r -q out.delta > out.rq.delta`  
 `#resumen de solapamientos`  
-`show-coords -r -c -l out.rq.delta > out.coords`  
+`show-coords -r -c -l out.rq.delta > out.coords`    
 En el archivo estan guardados los datos de los solapamientos encontrados.
 
 Datos de entrenamiento:
