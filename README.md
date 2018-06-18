@@ -22,7 +22,7 @@ Algunas herramientas de metaensamblaje creadas recientemente son:
 
 Sin embargo, ambas presentan problemas a la hora de discriminar lecturas quiméricas, dando algunos resultados érroneos. Esto es lo que se quiere mejorar.
 
-Dentro de los pasos que hay realizar al inicio está la identificación del solapamiento de las secuencias. Esta se hace generalmente con mummer, que es un alineador rápido de genomas.  
+Dentro de los pasos que hay realizar al inicio está la identificación del solapamiento de las secuencias. Esta se hace generalmente con mummer, que es un alineador rápido de genomas. (mummer se puede installar fácilmente con conda: `conda install -c bioconda mummer`)
   
 `#alineamiento de genomas, especificar length`  
 `nucmer -l length -prefix out assembly_1.fasta assembly2.fasta`  
@@ -33,7 +33,7 @@ Dentro de los pasos que hay realizar al inicio está la identificación del sola
   
 En el archivo estan guardados los datos de los solapamientos encontrados.  
   
-Una vez realizada la generación de los archivos de solapamiento, se debe utilizar la información proveniente de la propia secuencia y los solapalmientos, para escoger las uniones correctas y reconstruir correctas. Si se genera un modelo, se puede entrenar en base a un set de datos (que esta en generación) que contiene genoma completos (en 1 contig) que serían la meta y 2 ensamblajes generados con diferentes herramientas de ese genoma, que son los que se deben comparar y unir para ser similar a la meta. La comparación del resultado del modelo con la meta puede ser realizado usando que penalize tanto equivocaciones en la posición de los nucleotidos, como 
+Una vez realizada la generación de los archivos de solapamiento, se debe utilizar la información proveniente de la propia secuencia y los solapalmientos, para escoger las uniones correctas y reconstruir correctas. Si se genera un modelo, se puede entrenar en base a un set de datos (que esta en generación) que contiene genoma completos (en 1 contig) que serían la meta y 2 ensamblajes generados con diferentes herramientas de ese genoma, que son los que se deben comparar y unir para ser similar a la meta. La comparación del resultado del modelo con la meta puede ser realizada usando una métrica que penalize tanto equivocaciones en la posición de los nucleotidos, como el number de contigs obtenido. 
 
 Datos de entrenamiento:  
 Eucariontes:  
