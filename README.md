@@ -20,7 +20,7 @@ Sin embargo, ambas presentan problemas a la hora de discriminar lecturas quimér
 
 Dentro de los pases que hay realizar al inicio está la identificación del solapamiento de las secuencias. Esta se hace generalmente con mummer, que es un alineador rápido de genomas.
 
-'nucmer -maxmatch -c 100 -p nucmer B_anthracis_Mslice.fasta B_anthracis_contigs.fasta'
+`nucmer -maxmatch -c 100 -p nucmer B_anthracis_Mslice.fasta B_anthracis_contigs.fasta`
 
 Datos de entrenamiento:
 Eucariontes:
